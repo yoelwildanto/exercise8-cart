@@ -27,7 +27,7 @@ const Header = () => {
         <Navbar.Brand>
           <Link style={{fontSize: 40, fontWeight: 1000}} to="/">Shopping Mart</Link>
         </Navbar.Brand>
-        {useLocation().pathname.split("/")[1] !== "cart" && (
+        {/* {useLocation().pathname.split("/")[1] !== "cart" && (
           <Navbar.Text className="search">
             <FormControl
               style={{ width: 500 }}
@@ -43,7 +43,7 @@ const Header = () => {
               }}
             />
           </Navbar.Text>
-        )}
+        )} */}
         <Nav>
           <Dropdown alignRight>
             <Dropdown.Toggle variant="success">
@@ -63,7 +63,7 @@ const Header = () => {
                       />
                       <div className="cartItemDetail">
                         <span>{prod.name}</span>
-                        <span>$ {prod.price.split(".")[0]}</span>
+                        <span>Rp {prod.price.split(".")[0]}</span>
                       </div>
                       <AiFillDelete
                       color="red"
