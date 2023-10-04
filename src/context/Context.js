@@ -6,7 +6,7 @@ const Cart = createContext();
 faker.seed(99);
 
 const Context = ({ children }) => {
-  const products = [...Array(20)].map(() => ({
+  const products = [...Array(14)].map(() => ({// array(3) maksudnya ada 3 data faker
     id: faker.datatype.uuid(),
     name: faker.commerce.productName(),
     price: faker.commerce.price(),

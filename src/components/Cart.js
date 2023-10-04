@@ -64,7 +64,7 @@ const Cart = () => {
                       })
                     }
                   >
-                    <AiFillDelete fontSize="20px" />
+                    <AiFillDelete margin="5" color="red" fontSize="20px" />
                   </Button>
                 </Col>
               </Row>

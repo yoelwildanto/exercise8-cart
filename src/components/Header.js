@@ -25,7 +25,7 @@ const Header = () => {
     <Navbar bg="info" variant="dark" style={{ height: 80 }}>
       <Container>
         <Navbar.Brand>
-          <Link to="/">Shopping Cart</Link>
+          <Link style={{fontSize: 40, fontWeight: 1000}} to="/">Shopping Mart</Link>
         </Navbar.Brand>
         {useLocation().pathname.split("/")[1] !== "cart" && (
           <Navbar.Text className="search">
@@ -66,6 +66,7 @@ const Header = () => {
                         <span>$ {prod.price.split(".")[0]}</span>
                       </div>
                       <AiFillDelete
+                      color="red"
                         fontSize="20px"
                         style={{ cursor: "pointer" }}
                         onClick={() =>
@@ -78,7 +79,7 @@ const Header = () => {
                     </span>
                   ))}
                   <Link to="/cart">
-                    <Button style={{ width: "95%", margin: "0 10px" }}>
+                    <Button style={{border:"none",background:"green", width: "95%", margin: "0 10px" }}>
                       Go To Cart
                     </Button>
                   </Link>
