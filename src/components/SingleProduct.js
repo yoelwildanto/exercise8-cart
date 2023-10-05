@@ -1,6 +1,8 @@
 import { Card, Button } from "react-bootstrap";
 import { CartState } from "../context/Context";
 import Rating from "./Rating";
+// import axios from "axios";
+// import { useEffect, useState } from "react";
 // import { color } from "@chakra-ui/react";
 
 const SingleProduct = ({ prod }) => {
@@ -8,6 +10,8 @@ const SingleProduct = ({ prod }) => {
     state: { cart },
     dispatch,
   } = CartState();
+
+
 
   return (
     <div className="products">

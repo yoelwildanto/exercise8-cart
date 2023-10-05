@@ -21,6 +21,8 @@ const Header = () => {
     productDispatch,
   } = CartState();
 
+  
+
   return (
     <Navbar bg="info" variant="dark" style={{ height: 80 }}>
       <Container>
